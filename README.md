@@ -41,3 +41,13 @@ Start the app in `development` mode at [http://localhost:3000](http://localhost:
 ```
 $ npm start
 ```
+
+To work on the `wavedef` library alongside the app, clone it directly into your `node_modules` folder:
+
+```
+$ cd node_modules
+$ rm -rf wavedef
+$ git clone https://github.com/zakangelle/wavedef
+```
+
+Changes to the `wavedef` library will now trigger a rebuild/refresh in your app.
