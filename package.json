@@ -22,8 +22,7 @@
     "prepublish": "npm run clean && npm run build",
     "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
     "test": "tape -r ./node_modules/babel-register/lib/node.js ./test/index.js",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
-    "doc": "esdoc -c esdoc.json"
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
