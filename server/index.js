@@ -30,8 +30,4 @@ app.get('*', (req, res) => {
   res.sendFile('index.html', { root: process.env.PWD + '/dist' });
 });
 
-app.get('robots.txt', (req, res) => {
-  res.sendFile('robots.txt', { root: process.env.PWD + '/dist' });
-});
-
 app.listen(port);
