@@ -1,6 +1,6 @@
 # wavedef-app
 
-A synthesizer programming environment built using the [wavedef](https://github.com/zakangelle/wavedef) library.
+A synthesizer building/programming environment built using the [wavedef](https://github.com/zakangelle/wavedef) library.
 
 [![See Demo](https://img.shields.io/badge/see-demo-8500ff.svg)](http://dz-synth.herokuapp.com/)
 
