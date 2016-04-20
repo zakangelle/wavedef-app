@@ -40,7 +40,10 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: ['babel'],
-        exclude: /node_modules/,
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules/wavedef')
+        ]
       },
       {
         test: /\.css$/,
