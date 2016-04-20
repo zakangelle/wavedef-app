@@ -78,6 +78,7 @@
     "babelify": "^7.2.0",
     "chai": "^3.5.0",
     "connect-history-api-fallback": "^1.1.0",
+    "copy-webpack-plugin": "^2.1.1",
     "coveralls": "^2.11.6",
     "cross-env": "^1.0.7",
     "css-loader": "^0.23.1",
