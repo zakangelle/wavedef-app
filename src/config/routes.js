@@ -3,13 +3,11 @@ import { Route, IndexRoute } from 'react-router';
 import App from '../containers/App.js';
 import DrumSynthUI from '../containers/DrumSynthUI.js';
 import ThreeOscSynthUI from '../containers/ThreeOscSynthUI.js';
-import RatPoisonUI from '../containers/RatPoisonUI.js';
 
 export default (
   <Route path='/' component={App}>
     <IndexRoute component={ThreeOscSynthUI} />
     <Route path='drum' component={DrumSynthUI} />
     <Route path='3osc' component={ThreeOscSynthUI} />
-    <Route path='rat-poison' component={RatPoisonUI} />
   </Route>
 );
