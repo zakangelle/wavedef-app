@@ -18,10 +18,6 @@ export default class Nav extends React.Component
         <li className={props.isActive === '/drum' ? 'active' : null}>
           <a href='drum'>Drum Synth</a>
         </li>
-
-        <li className={props.isActive === '/rat-poison' ? 'active' : null}>
-          <a href='rat-poison'>Rat Poison</a>
-        </li>
       </ul>
     )
   }
