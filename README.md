@@ -4,10 +4,6 @@ A synthesizer building/programming environment built using the [wavedef](https:/
 
 [![Circle CI](https://circleci.com/gh/zakangelle/wavedef-app/tree/master.svg?style=shield)](https://circleci.com/gh/zakangelle/wavedef-app/tree/master) [![Coverage Status](https://img.shields.io/coveralls/zakangelle/wavedef-app.svg)](https://coveralls.io/github/zakangelle/wavedef-app?branch=master) [![See Demo](https://img.shields.io/badge/see-demo-8500ff.svg)](http://dev.wavedef.com/)
 
-<a href="http://dev.wavedef.com/">
-  <img src='http://i.imgur.com/AaNfuK5.jpg?1' width='360px'>
-</a>
-
 ## Requirements
 
 + NodeJS
