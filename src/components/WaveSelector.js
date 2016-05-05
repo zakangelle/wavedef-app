@@ -1,10 +1,10 @@
 import React from 'react';
 import ButtonGroup from './ButtonGroup.js';
 import Button from './Button.js';
-import sineIcon from '../static/images/icons/waveforms/sine.png';
-import squareIcon from '../static/images/icons/waveforms/square.png';
-import sawtoothIcon from '../static/images/icons/waveforms/sawtooth.png';
-import triangleIcon from '../static/images/icons/waveforms/triangle.png';
+import sineIcon from 'file!../static/images/icons/waveforms/sine.png';
+import squareIcon from 'file!../static/images/icons/waveforms/square.png';
+import sawtoothIcon from 'file!../static/images/icons/waveforms/sawtooth.png';
+import triangleIcon from 'file!../static/images/icons/waveforms/triangle.png';
 
 /**
  * A waveform selector UI component
