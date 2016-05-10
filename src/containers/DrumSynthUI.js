@@ -5,14 +5,18 @@ import Slider from '../components/Slider.js';
 
 export default class DrumSynthUI extends React.Component
 {
-  componentWillMount()
+  constructor()
   {
-    this.drumSynth = new DrumSynth();
+    super();
+
+    this.state = {
+      drumSynth: new DrumSynth()
+    }
   }
 
   render()
   {
-    let { kick, hihat, snare } = this.drumSynth;
+    let { kick, hihat, snare } = this.state.drumSynth;
 
     return (
       <div>

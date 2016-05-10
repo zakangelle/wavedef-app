@@ -8,14 +8,18 @@ import Keyboard from '../components/Keyboard.js';
 
 export default class ThreeOscSynthUI extends React.Component
 {
-  componentWillMount()
+  constructor()
   {
-    this.threeOscSynth = new ThreeOscSynth();
+    super();
+
+    this.state = {
+      threeOscSynth: new ThreeOscSynth()
+    }
   }
 
   render()
   {
-    let { oscGroup, mixer, filter, envelope } = this.threeOscSynth;
+    let { oscGroup, mixer, filter, envelope } = this.state.threeOscSynth;
     let { osc1, osc2, osc3 } = oscGroup;
 
     return (
