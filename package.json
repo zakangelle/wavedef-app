@@ -91,7 +91,7 @@
     "promise-decode-audio-data": "^0.2.0",
     "react": "^0.14.6",
     "react-addons-test-utils": "^0.14.7",
-    "react-bootstrap-switch": "^3.4.1",
+    "react-bootstrap-switch": "3.4.1",
     "react-dom": "^0.14.6",
     "react-radio": "^2.1.1",
     "react-router": "^2.0.1",
