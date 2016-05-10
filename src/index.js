@@ -16,5 +16,3 @@ render(
   <Router history={browserHistory} routes={routes} />,
   document.getElementById('main')
 );
-
-console.log('test');
