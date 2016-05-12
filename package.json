@@ -4,10 +4,10 @@
   "description": "A synthesizer building/programming environment built using the wavedef library.",
   "main": "index.js",
   "devEngines": {
-    "node": "5.9.0"
+    "node": "6.1.0"
   },
   "engines": {
-    "node": "5.9.0"
+    "node": "6.1.0"
   },
   "scripts": {
     "start": "node server/index.js",
