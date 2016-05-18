@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
+    'react-hot-loader/patch',
     'webpack-hot-middleware/client',
     './src/index'
   ],
@@ -27,6 +28,10 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js'],
+    alias: { wavedef: 'wavedef' },
+    root: [
+      path.resolve('./lib')
+    ]
   },
   module: {
     loaders: [
@@ -35,7 +40,7 @@ module.exports = {
         loaders: ['babel'],
         include: [
           path.resolve(__dirname, 'src'),
-          path.resolve(__dirname, 'node_modules/wavedef')
+          path.resolve(__dirname, 'lib/wavedef')
         ]
       },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
