@@ -38,7 +38,11 @@ module.exports = {
     ])
   ],
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js'],
+    alias: { wavedef: 'wavedef' },
+    root: [
+      path.resolve('./lib')
+    ]
   },
   module: {
     loaders: [
@@ -47,7 +51,7 @@ module.exports = {
         loaders: ['babel'],
         include: [
           path.resolve(__dirname, 'src'),
-          path.resolve(__dirname, 'node_modules/wavedef')
+          path.resolve(__dirname, 'lib/wavedef')
         ]
       },
       {
