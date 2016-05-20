@@ -1,9 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const StatsWriterPlugin = require('webpack-stats-plugin').StatsWriterPlugin;
-const childProcess = require('child_process');
-const VERSION = childProcess.execSync('git rev-parse HEAD').toString().substr(0, 8);
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -27,15 +24,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './build/index.html',
       filename: 'index.html'
-    }),
-    new StatsWriterPlugin({
-      transform: (data) => {
-        return JSON.stringify({
-          rev: VERSION,
-          date: (new Date()).toString()
-        }, null, 2);
-      },
-      filename: 'meta.json'
     })
   ],
   resolve: {
