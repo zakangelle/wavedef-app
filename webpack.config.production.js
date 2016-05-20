@@ -3,6 +3,9 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const StatsWriterPlugin = require('webpack-stats-plugin').StatsWriterPlugin;
+const childProcess = require('child_process');
+const VERSION = childProcess.execSync('git rev-parse HEAD').toString().substr(0, 8);
 
 module.exports = {
   devtool: 'source-map',
