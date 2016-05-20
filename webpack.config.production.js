@@ -35,7 +35,16 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './src/static/robots.txt' },
       { from: './src/static/favicon.ico' }
-    ])
+    ]),
+    new StatsWriterPlugin({
+      transform: (data) => {
+        return JSON.stringify({
+          rev: VERSION,
+          date: (new Date()).toString()
+        }, null, 2);
+      },
+      filename: 'meta.json'
+    })
   ],
   resolve: {
     extensions: ['', '.js'],
